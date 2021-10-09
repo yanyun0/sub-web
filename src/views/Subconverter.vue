@@ -258,6 +258,26 @@ export default {
         backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
         remoteConfig: [
           {
+            label: "ACL4SSR个性定制",
+            options: [
+              {
+                label: "ACL4SSR_Online",
+                value:
+                  "https://raw.githubusercontent.com/DurganShelley/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_NoAuto",
+                value:
+                  "https://raw.githubusercontent.com/DurganShelley/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
+              }
+              {
+                label: "ACL4SSR_Online_Full_AdblockPlus",
+                value:
+                  "https://raw.githubusercontent.com/DurganShelley/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
+              }              
+            ]
+          },        
+          {
             label: "universal",
             options: [
               {
@@ -331,7 +351,7 @@ export default {
                   "https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/basic.ini"
               }
             ]
-          }
+          }          
         ]
       },
       form: {
