@@ -351,7 +351,7 @@ export default {
                   "https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/basic.ini"
               }
             ]
-          }          
+          }
         ]
       },
       form: {
