@@ -266,17 +266,107 @@ export default {
                   "https://raw.githubusercontent.com/DurganShelley/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
               },
               {
+                label: "ACL4SSR_Online_Full_AdblockPlus",
+                value:
+                  "https://raw.githubusercontent.com/DurganShelley/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
+              },
+              {
                 label: "ACL4SSR_Online_Full_NoAuto",
                 value:
                   "https://raw.githubusercontent.com/DurganShelley/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
+              }              
+            ]
+          },
+          {
+            label: "ACL4SSR原版规则",
+            options: [
+              {
+                label: "ACL4SSR_Online",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
+              },
+              {
+                label: "ACL4SSR_Online_AdblockPlus",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_Online_NoAuto",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_Online_NoReject",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
               },
               {
                 label: "ACL4SSR_Online_Full_AdblockPlus",
                 value:
-                  "https://raw.githubusercontent.com/DurganShelley/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_NoAuto",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini_AdblockPlus",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini_NoAuto",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini"
+              },
+              {
+                label: "ACL4SSR_AdblockPlus",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_NoAuto",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_BackCN",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_BackCN.ini"
+              },
+              {
+                label: "ACL4SSR_WithChinaIp",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithChinaIp.ini"
+              },
+              {
+                label: "ACL4SSR_WithGFW",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithGFW.ini"
+              },
+              {
+                label: "ACL4SSR_WithChinaIp_WithGFW",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithChinaIp_WithGFW.ini"
               }              
             ]
-          },        
+          },          
           {
             label: "universal",
             options: [
