@@ -31,22 +31,13 @@
               </el-form-item>
 
               <div v-if="advanced === '2'">
-                <el-form-item label="后端地址:">
-                  <el-autocomplete
-                    style="width: 100%"
-                    v-model="form.customBackend"
-                    :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：http://127.0.0.1:25500/sub?"
-                  >
-                    <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
-                  </el-autocomplete>
-                </el-form-item>
                 <el-form-item label="远程配置:">
                   <el-select
                     v-model="form.remoteConfig"
                     allow-create
                     filterable
-                    placeholder="请选择"
+                    clearable
+                    placeholder="请选择，不选择则使用后端接口提供的默认配置"
                     style="width: 100%"
                   >
                     <el-option-group
@@ -62,6 +53,26 @@
                       ></el-option>
                     </el-option-group>
                     <el-button slot="append" @click="gotoRemoteConfig" icon="el-icon-link">配置示例</el-button>
+                  </el-select>
+                </el-form-item>
+                <el-form-item label="后端地址:">
+                  <el-select
+                    v-model="form.customBackend"
+                    :fetch-suggestions="backendSearch"
+                    allow-create
+                    filterable
+                    clearable
+                    placeholder="请选择，不选择则使用默认后端"
+                    style="width: 100%"
+                  >
+                    <el-option
+                      v-for="item in options.backendOptions"
+                      :key="item.value"
+                      :label="item.label"
+                      :value="item.value"
+                    >
+                    </el-option>
+                    <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-select>
                 </el-form-item>
                 <el-form-item label="Include:">
@@ -255,7 +266,36 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+          { 
+            label: "api.durgan.top（默认后端）",
+            value: "https://api.durgan.top/sub?"
+          },
+          { 
+            label: "127.0.0.1:25500（使用者自建本地后端）",
+            value: "http://127.0.0.1:25500/sub?"
+          },
+          { 
+            label: "api.paoche.gq（跑车机场用户娱乐后端）",
+            value: "https://api.paoche.gq/sub?"
+          },
+          { 
+            label: "api-paoche.herokuapp.com（托管在heroku）",
+            value: "http://api-paoche.herokuapp.com/sub?"
+          },
+          { 
+            label: "api.wcc.best（订阅转换前端作者提供）",
+            value: "https://api.wcc.best/sub?"
+          },
+          { 
+            label: "subcon.dlj.tf（订阅转换后端作者提供）",
+            value: "https://subcon.dlj.tf/sub?"
+          },
+          { 
+            label: "sub.id9.cc（品云测速频道提供）",
+            value: "https://sub.id9.cc/sub?"
+          }
+        ],        
         remoteConfig: [
           {
             label: "ACL4SSR个性定制",
