@@ -276,6 +276,10 @@ export default {
             value: "http://127.0.0.1:25500/sub?"
           },
           { 
+            label: "api.awyan.tk（路人A自建后端）",
+            value: "https://api.awyan.tk/sub?"
+          },
+          { 
             label: "api.paoche.gq（跑车机场用户娱乐后端）",
             value: "https://api.paoche.gq/sub?"
           },
