@@ -268,12 +268,12 @@ export default {
         },
         backendOptions: [
           { 
-            label: "api.awyan.tk（默认后端）",
-            value: "https://api.awyan.tk/sub?"
+            label: "api.awyun.cc（默认后端）",
+            value: "https://api.awyun.cc/sub?"
           },
           { 
-            label: "api.awyun.cc（备用后端）",
-            value: "https://api.awyun.cc/sub?"
+            label: "api.awyan.tk（备用后端）",
+            value: "https://api.awyan.tk/sub?"
           }
         ],        
         remoteConfig: [
