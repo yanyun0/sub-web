@@ -4,7 +4,7 @@
       <el-col>
         <el-card>
           <div slot="header">
-            订阅转换
+            顾清欢云 在线订阅转换
             <svg-icon icon-class="github" style="margin-left: 20px" @click="goToProject" />
 
             <div style="display: inline-block; position:absolute; right: 20px">{{ backendVersion }}</div>
@@ -268,32 +268,12 @@ export default {
         },
         backendOptions: [
           { 
-            label: "api.durgan.top（默认后端）",
-            value: "https://api.durgan.top/sub?"
-          },
-          { 
-            label: "127.0.0.1:25500（使用者自建本地后端）",
-            value: "http://127.0.0.1:25500/sub?"
-          },
-          { 
-            label: "api.awyan.tk（路人A自建后端）",
+            label: "api.awyan.tk（默认后端）",
             value: "https://api.awyan.tk/sub?"
           },
           { 
-            label: "api-paoche.herokuapp.com（托管在heroku）",
-            value: "http://api-paoche.herokuapp.com/sub?"
-          },
-          { 
-            label: "api.wcc.best（订阅转换前端作者提供）",
-            value: "https://api.wcc.best/sub?"
-          },
-          { 
-            label: "subcon.dlj.tf（订阅转换后端作者提供）",
-            value: "https://subcon.dlj.tf/sub?"
-          },
-          { 
-            label: "sub.id9.cc（品云测速频道提供）",
-            value: "https://sub.id9.cc/sub?"
+            label: "api.awyun.cc（备用后端）",
+            value: "https://api.awyun.cc/sub?"
           }
         ],        
         remoteConfig: [
